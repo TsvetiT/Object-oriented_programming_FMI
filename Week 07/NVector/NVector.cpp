@@ -144,7 +144,7 @@ bool operator||(const NVector& lhs, const NVector& rhs)
         }
         
         // Calculate the ratio of the current components
-        double currentRatio = lhs[i] / rhs[i];
+        double currentRatio = lhs[i] / (double)rhs[i];
         // If the ratio is not set, set it. Otherwise, compare it with the current ratio
         if (!ratioSet) 
         {
